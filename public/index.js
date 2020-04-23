@@ -98,7 +98,7 @@ function initBotConversation() {
                 payload: {
                     activity: {
                         type: "invoke",
-                        name: "InitConversation",
+                        name: "TriggerScenario",
                         locale: user.locale,
                         value: { 
                             trigger: "covid19_triage"
