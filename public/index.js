@@ -104,8 +104,16 @@ function initBotConversation() {
                             // must use for authenticated conversation.
                             jsonWebToken: jsonWebToken,
 
-                            // Use the following activity to proactively invoke a bot scenario    
-                            trigger: "covid19_triage"
+                             // Use the following activity to proactively invoke a bot scenario
+                            
+                            triggeredScenario: {
+                                trigger: "covid19_triage"/*,
+                                args: {
+                                    myVar1: "{custom_arg_1}",
+                                    myVar2: "{custom_arg_2}"
+                                }*/
+                            }
+                            
                         }
                     }
                 }
